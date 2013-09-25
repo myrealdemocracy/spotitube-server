@@ -16,3 +16,6 @@
 
 # Ignore database configuration
 /config/database.yml
+
+# Ignore vim swap files
+.*.swp
