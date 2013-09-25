@@ -4,6 +4,9 @@ gem 'rails', '4.0.0'
 gem 'json'
 gem 'mysql2'
 
+# Load variables set in .env
+gem 'dotenv-rails', '~> 0.9'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -20,6 +23,10 @@ gem 'jquery-rails'
 
 group :development do
   gem 'better_errors'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
 end
 
 # To use ActiveModel has_secure_password
