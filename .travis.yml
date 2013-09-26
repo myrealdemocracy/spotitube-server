@@ -4,3 +4,6 @@ rvm:
 before_script:
   - cp config/database.yml.example config/database.yml
   - rake db:setup
+addons:
+  code_climate:
+    repo_token: 6bf4c544a4322afb5f3b08a84b9969d5fb8a841209925fd283f404b50f545240
