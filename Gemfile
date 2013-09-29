@@ -1,3 +1,4 @@
+ruby '2.0.0'
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
@@ -32,6 +33,11 @@ end
 
 group :test do
   gem 'codeclimate-test-reporter'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # To use ActiveModel has_secure_password
